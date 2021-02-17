@@ -4,6 +4,9 @@ skirt = [size: "small", color: "purple", style: "mini"]
 pants = [size: "six", color: "black", style: "skinny"]
 
 class Product
+  attr_reader :name, :size, :color, :style
+  attr_writer :name, :size, :color, :style
+
   def initialize(input_name, input_size, input_color, input_style)
     @name = input_name
     @size = input_size
@@ -11,37 +14,37 @@ class Product
     @style = input_style
   end
 
-  def name
-    @name
-  end
+  # def name
+  #   @name
+  # end
 
-  def size
-    @size
-  end
+  # def size
+  #   @size
+  # end
 
-  def color
-    @color
-  end
+  # def color
+  #   @color
+  # end
 
-  def style
-    @style
-  end
+  # def style
+  #   @style
+  # end
 
-  def name=(input_name)
-    @name = input_name
-  end
+  # def name=(input_name)
+  #   @name = input_name
+  # end
 
-  def size=(input_size)
-    @size = input_size
-  end
+  # def size=(input_size)
+  #   @size = input_size
+  # end
 
-  def color=(input_color)
-    @color = input_color
-  end
+  # def color=(input_color)
+  #   @color = input_color
+  # end
 
-  def style=(style_size)
-    @style = style_size
-  end
+  # def style=(style_size)
+  #   @style = style_size
+  # end
 end
 
 shirt = Product.new("shirt", "medium", "red", "t-shirt")
