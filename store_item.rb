@@ -11,6 +11,10 @@ class Product
     @style = input_style
   end
 
+  def name
+    @name
+  end
+
   def size
     @size
   end
@@ -19,8 +23,8 @@ class Product
     @color
   end
 
-  def color
-    @color
+  def style
+    @style
   end
 
   def name=(input_name)
@@ -46,5 +50,9 @@ pants = Product.new("pants", "six", "black", "skinny")
 p shirt
 p skirt
 p pants
+p shirt.name
+p shirt.size
+p shirt.color
+
 shirt.color = ("purple")
 p shirt
