@@ -7,11 +7,11 @@ class Product
   attr_reader :name, :size, :color, :style
   attr_writer :name, :size, :color, :style
 
-  def initialize(input_name, input_size, input_color, input_style)
-    @name = input_name
-    @size = input_size
-    @color = input_color
-    @style = input_style
+  def initialize(input_options)
+    @name = input_options[:name]
+    @size = input_options[:size]
+    @color = input_options[:color]
+    @style = input_options[:style]
   end
 
   # def name
@@ -47,12 +47,10 @@ class Product
   # end
 end
 
-shirt = Product.new("shirt", "medium", "red", "t-shirt")
-skirt = Product.new("skirt", "small", "purple", "mini")
-pants = Product.new("pants", "six", "black", "skinny")
+shirt = Product.new({ name: "shirt", size: "medium", color: "red", style: "t-shirt" })
+# skirt = Product.new("skirt", "small", "purple", "mini")
+# pants = Product.new("pants", "six", "black", "skinny")
 p shirt
-p skirt
-p pants
 p shirt.name
 p shirt.size
 p shirt.color
