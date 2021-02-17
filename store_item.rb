@@ -4,8 +4,8 @@ skirt = [size: "small", color: "purple", style: "mini"]
 pants = [size: "six", color: "black", style: "skinny"]
 
 class Product
-  attr_reader :name, :size, :color, :style
-  attr_writer :name, :size, :color, :style
+  attr_accessor :name, :size, :color, :style
+  # attr_writer :name, :size, :color, :style
 
   def initialize(input_options)
     @name = input_options[:name]
