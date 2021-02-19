@@ -51,7 +51,7 @@ class Bike < Vehicle
   end
 end
 
-car1 = Car.new(make: "ford")
+car1 = Car.new(make: "unicorn")
 p car1
 # bike1 = Bike.new
 # car1.accelerate
